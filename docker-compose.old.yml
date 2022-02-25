@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  otteback:
+    build: 
+      context: .
+      dockerfile: ./backend/Dockerfile
+    ports:
+      - "8000:8000"
+    #volumes:
+      #- ./backend/:/app/backend
+    command: gunicorn --bind 0:8000 djangoreactapi.wsgi:application
+
+  ottefront:
+    build: 
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    ports:
+      - "3000:3000"
+    #volumes:
+      #- ./frontend/:/app/frontend
+    command: yarn start
+    
+  otteadmin:
+    build: 
+      context: .
+      dockerfile: ./adminfrontend/Dockerfile
+    ports:
+      - "5000:5000"
+    #volumes:
+      #- ./adminfrontend/:/app/adminfrontend
+    command: yarn start

@@ -1,0 +1,82 @@
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+@import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+@import '~react-toastify/scss/main';
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-header .navbar-nav .nav-item .nav-link {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar-nav > .user-menu .user-image {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-right: 0;
+    margin-left: -8px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul.pagination li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+ul.pagination li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+ul.pagination li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+ul.pagination li a {
+    text-decoration: none;
+    color: #337ab7;
+    font-size: 1rem;
+}
+
+ul.pagination li.active a {
+    color: white;
+}
+
+ul.pagination li.active {
+    background-color: #337ab7;
+}
+
+ul.pagination li a:hover,
+ul.pagination li a.active {
+    color: blue;
+}
+
+.page-selection {
+    width: 48px;
+    height: 30px;
+    color: #337ab7;
+}

@@ -1,0 +1,72 @@
+.type09 {
+  border-collapse: collapse;
+  text-align: left;
+  /* line-height: 1.5; */
+  color: black;
+  font-weight: 900;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+}
+.type09 thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  background-color: cornflowerblue;
+  color: #ffffff;
+  border-bottom: 3px solid #036;
+}
+.type09 tbody th {
+  width: 300px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+  color: #ffffff;
+}
+.type09 td {
+  width: 800px;
+  padding: 10px;
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.type10 {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  color: black;
+}
+.type10 thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  background-color: cornflowerblue;
+  color: black;
+  border-bottom: 3px solid #036;
+}
+.type10 tbody th {
+  width: 100px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+  color: black;
+}
+.type10 td {
+  width: 900px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}

@@ -1,0 +1,26 @@
+# docker-compose.yml
+version: "3"
+services:
+  nginx:
+    image: nginx
+    container_name: nginx
+    ports:
+      - "8000:90/tcp"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./static:/staticfiles
+    depends_on:
+      - backend
+    network_mode: "host"
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend
+    command: gunicorn djangoreactapi.wsgi:application --bind 0.0.0.0:8000
+    expose:
+      - "8000"
+    network_mode: "host"
+    volumes:
+      - ./static:/usr/src/app/staticfiles
